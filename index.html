@@ -4,9 +4,177 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bootstrap booting</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <style>
+        h1{
+            margin-top: 100px;
+        }
+        #flex-container{
+          height: 300px;
+          background-color: lightpink;
+        }
+    </style>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg fixed-top bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
     <h1>Hello from Bootstrap</h1>
+    <button class="btn btn-primary">My button</button>
+    <button class="btn btn-secondary">My Second</button>
+    <button class="btn btn-success">Success</button>
+    <button class="btn btn-warning">Warning</button>
+
+    <h1>Colors</h1>
+    <p class="text-primary" >This is my first paragraph</p>
+    <P class="text-danger">I am the dangerman</P>
+
+    <div class="bg-primary text-white">
+        <h1>My news</h1>
+        <P>I am learning bootstrap</P>
+    </div>
+    <div class="text-white bg-warning">
+        <h1>My hobby</h1>
+        <P>Scroll facebook and watch movies</P>
+    </div>
+        <h1>images</h1>
+        <img class="img-fluid w-25 rounded-circle img-thumbnail" src="images/01.jpg" alt="">
+        <img class="img-fluid w-25 rounded-circle img-thumbnail" src="images/cartoon.png" alt=""> 
+        <img class="w-25 " src="images/food.jpg" alt="">
+
+    <h1>Card</h1>
+    <div class="card" style="width: 18rem;">
+        <img src="images/02.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Warmhole</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Buy now</a>
+        </div>
+      </div>
+
+      <div class="card-group">
+        <div class="card">
+          <img src="images/alone.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/sad.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/single.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+
+      <h1>navigation</h1>
+      <nav class="nav">
+          <a class="nav-link" href="">Home</a>
+          <a class="nav-link" href="">Products</a>
+          <a class="nav-link" href="">Shopping cart</a>
+          <a class="nav-link" href="">Shipping</a>
+      </nav>
+     
+      <div class="container">
+        <h1>Grid</h1>
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+              <img class="img-fluid" src="images/02.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam hic impedit quia, non fuga provident temporibus quae recusandae magnam ratione quis itaque saepe inventore minima id, mollitia delectus eius quos repudiandae. Possimus consequatur minus ullam voluptates, maxime iste nostrum natus aut dolore quas, tempore dicta aliquam repudiandae quae corporis animi doloremque dolorum? Mollitia similique cupiditate inventore eveniet, ipsa numquam, obcaecati dignissimos alias soluta doloremque, dolores illum odio magnam distinctio laboriosam eos a quos sed fugit. Tempora, blanditiis id. Excepturi illum reprehenderit ipsam modi adipisci officiis impedit hic eum officia nobis molestiae, mollitia nostrum, dolorem voluptas numquam molestias accusamus? Atque at, numquam error sunt maiores delectus, possimus eos facere ipsum enim aspernatur earum, blanditiis accusamus minima fuga facilis praesentium illo harum?</p>
+           </div>
+           <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo molestias impedit porro quo nostrum praesentium, laborum repellat. Eum odio impedit placeat aut. Ipsam dolorum eligendi nulla amet quaerat dolore earum eveniet tempore veniam labore veritatis, impedit doloribus magni exercitationem, harum ut iusto sunt nesciunt tempora beatae eum suscipit autem? Modi officiis ipsam sit, assumenda inventore magnam sequi qui enim quasi commodi ex tenetur veritatis molestias. Porro saepe necessitatibus nisi aliquid repellendus, quis ad quaerat vero nihil, accusantium ab maiores a, autem fugit omnis dolores maxime minus dolor reprehenderit iste debitis. Ducimus iusto, autem iure minima libero expedita error reiciendis quam voluptate exercitationem voluptatem facilis? Tempore est dignissimos error exercitationem explicabo, voluptate atque, beatae cum doloribus animi, aspernatur obcaecati. Eligendi, assumenda.</p>
+           </div>
+           <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, id. Explicabo vitae saepe, error odio eligendi hic numquam distinctio, consectetur ea dicta vel quisquam. Alias, porro provident cumque vel voluptatem blanditiis eaque optio mollitia iure, nisi nulla dolore assumenda maiores doloribus quasi odit eius quae sint a? Impedit, suscipit eveniet nesciunt iure voluptatibus excepturi fugiat aperiam molestias tempore officiis corporis mollitia earum dolorem at fuga maiores, dolore, iusto eligendi commodi deserunt hic? Quis esse sint assumenda quod excepturi architecto similique!</p>
+           </div>
+           <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus laudantium maiores vitae ipsam accusantium expedita natus ducimus nulla quos ipsum unde, nisi dolorem officiis blanditiis esse incidunt, reiciendis, dolore ab. Dolorum laboriosam ipsum doloremque maiores dolor reiciendis necessitatibus eveniet accusantium et ex exercitationem, libero consequatur temporibus soluta hic suscipit itaque. Voluptas, est iusto asperiores omnis eveniet, debitis non beatae possimus ut doloremque saepe illum, nostrum nulla sint incidunt? Totam, repudiandae?</p>
+
+           </div>
+          </div>
+      </div>
+      <div class="container">
+        <h1>Carousel</h1>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/03.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/04.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/05.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div> 
+      </div>  
+
+    <div class="container">
+         <h1>Flex Layout</h1>
+         <div id="flex-container" class="d-flex align-items-center justify-content-center">
+            <div>Shabana</div>
+            <div>Shabnoor</div>
+            <div>Shuchorita</div>
+         </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script> 
+
 </body>
 </html>
